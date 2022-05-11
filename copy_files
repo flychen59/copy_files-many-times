@@ -1,0 +1,10 @@
+import os
+import shutil
+seq=1
+for x in range(0, 800):  # 需要复制的份数10份
+    # 需要另存的位置，名字
+    a = '/home/flychen59/SPADE/datasets/iVH2/leftImg8bit/val/' + 'berlin_' + '{:06d}'.format(seq)+'_labelIds.png'
+    # 需要复制的对象
+    shutil.copy('/home/flychen59/SPADE/datasets/iVH2/leftImg8bit/val/berlin_000001_leftImg8bit.png', a)
+    seq+=1
+
